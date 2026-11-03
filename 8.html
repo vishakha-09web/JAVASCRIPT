@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Union of Two Sets</title>
+</head>
+<body>
+    <h2>Union of Two Sets</h2>
+
+    <script>
+        var A = [1, 2, 3, 4];
+        var B = [3, 4, 5, 6];
+
+        var union = [...new Set([...A, ...B])];
+
+        document.write("Set A = " + A + "<br>");
+        document.write("Set B = " + B + "<br>");
+        document.write("Union = " + union);
+    </script>
+</body>
+</html>
