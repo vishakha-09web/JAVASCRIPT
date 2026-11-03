@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Replace String</title>
+</head>
+<body>
+    <h2>Replace Character in String</h2>
+
+    <script>
+        var str = prompt("Enter a string:");
+        var oldChar = prompt("Enter character to replace:");
+        var newChar = prompt("Enter new character:");
+
+        var result = str.replaceAll(oldChar, newChar);
+
+        document.write("Original String = " + str + "<br>");
+        document.write("New String = " + result);
+    </script>
+</body>
+</html>
