@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <h2>Countdown Timer</h2>
+
+    <p id="count"></p>
+
+    <script>
+        var num = 10;
+
+        var timer = setInterval(function() {
+            document.getElementById("count").innerHTML = num;
+
+            num--;
+
+            if (num < 0) {
+                clearInterval(timer);
+                document.getElementById("count").innerHTML = "Time Over!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
