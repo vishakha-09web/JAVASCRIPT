@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Over and Out</title>
+</head>
+<body>
+    <h2>Mouse Over and Mouse Out Events</h2>
+    <p id="demo"
+       onmouseover="mouseOver()"
+       onmouseout="mouseOut()">
+       Move Mouse Over Here
+    </p>
+    <script>
+        function mouseOver() {
+            document.getElementById("demo").innerHTML =
+            "Mouse is Over!";
+        }
+        function mouseOut() {
+            document.getElementById("demo").innerHTML =
+            "Mouse is Out!";
+        }
+    </script>
+</body>
+</html>
